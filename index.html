@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Computing Onepager | Azure Static Web Apps</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-glow"></div>
+  <div class="grid-overlay"></div>
+
+  <header class="site-header">
+    <a href="#top" class="brand" aria-label="Naar boven">
+      <span class="brand-icon">☁</span>
+      <span>Cloud<span>Launch</span></span>
+    </a>
+    <nav aria-label="Hoofdnavigatie">
+      <a href="#concept">Concept</a>
+      <a href="#route">Route</a>
+      <a href="#challenge">Challenge</a>
+      <a href="#deploy">Deploy</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-block">
+      <div class="hero-copy">
+        <p class="tag">MBO Cloud Computing • Static Web App • GitHub + Azure</p>
+        <h1>Van HTML-bestanden naar een live website in de cloud.</h1>
+        <p class="intro">
+          In deze onepager ontdek je hoe een static web app werkt: je bouwt een website met HTML en CSS,
+          uploadt de bestanden naar GitHub en publiceert alles via Microsoft Azure Static Web Apps.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#challenge">Start de opdracht</a>
+          <a class="button ghost" href="#route">Bekijk de workflow</a>
+        </div>
+      </div>
+
+      <aside class="deploy-card" aria-label="Deployment status">
+        <div class="window-dots"><span></span><span></span><span></span></div>
+        <div class="deploy-title">Azure Static Web Apps</div>
+        <div class="status-line"><span class="pulse"></span>Live deployment</div>
+        <pre><code>git add .
+git commit -m "mijn cloud website"
+git push origin main
+
+GitHub Actions  ✓ build
+Azure hosting   ✓ online
+URL             ✓ klaar</code></pre>
+      </aside>
+    </section>
+
+    <section class="quick-cards" aria-label="Kernpunten">
+      <article>
+        <strong>01</strong>
+        <h2>Static</h2>
+        <p>HTML, CSS en eventueel JavaScript. Geen eigen server nodig.</p>
+      </article>
+      <article>
+        <strong>02</strong>
+        <h2>GitHub</h2>
+        <p>Je repository is de centrale plek waar jouw bestanden staan.</p>
+      </article>
+      <article>
+        <strong>03</strong>
+        <h2>Azure</h2>
+        <p>Azure publiceert je site automatisch wanneer je code pusht.</p>
+      </article>
+      <article>
+        <strong>04</strong>
+        <h2>Portfolio</h2>
+        <p>Je eindresultaat is een echte online website die je kunt delen.</p>
+      </article>
+    </section>
+
+    <section id="concept" class="section-block split">
+      <div>
+        <p class="tag">Het concept</p>
+        <h2>Een static web app is snel, simpel en perfect om cloud deployment te leren.</h2>
+        <p>
+          Een static web app bestaat uit bestanden die direct naar de browser worden gestuurd. Denk aan
+          <code>index.html</code>, <code>styles.css</code> en afbeeldingen. Azure zorgt voor hosting, beveiligde HTTPS
+          en koppeling met GitHub. Jij focust op bouwen en publiceren.
+        </p>
+      </div>
+      <div class="concept-panel">
+        <div class="mini-diagram">
+          <span>HTML/CSS</span>
+          <b>→</b>
+          <span>GitHub repo</span>
+          <b>→</b>
+          <span>Azure Static Web App</span>
+          <b>→</b>
+          <span>Live URL</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="route" class="section-block">
+      <div class="section-heading">
+        <p class="tag">De route</p>
+        <h2>Zo gaat jouw website van laptop naar cloud.</h2>
+      </div>
+      <div class="timeline">
+        <article>
+          <span>1</span>
+          <h3>Bouw lokaal</h3>
+          <p>Maak je onepager met HTML en CSS. Test in je browser.</p>
+        </article>
+        <article>
+          <span>2</span>
+          <h3>Upload naar GitHub</h3>
+          <p>Push je project naar een repository, bijvoorbeeld <code>cloud-onepager</code>.</p>
+        </article>
+        <article>
+          <span>3</span>
+          <h3>Koppel Azure</h3>
+          <p>Maak een Azure Static Web App en verbind deze met je GitHub repository.</p>
+        </article>
+        <article>
+          <span>4</span>
+          <h3>Deploy automatisch</h3>
+          <p>Na elke push start GitHub Actions en publiceert Azure de nieuwste versie.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="challenge" class="section-block challenge">
+      <div>
+        <p class="tag">Student challenge</p>
+        <h2>Maak jouw cloud landingpage.</h2>
+        <p>
+          Ontwerp een onepager waarin je laat zien wie je bent, wat cloud computing betekent en hoe jouw site
+          via GitHub en Microsoft Azure online komt. Bonuspunten voor eigen stijl, animaties en duidelijke uitleg.
+        </p>
+      </div>
+      <ul class="checklist">
+        <li>Gebruik minimaal één HTML-bestand en één CSS-bestand.</li>
+        <li>Leg op de pagina uit wat een static web app is.</li>
+        <li>Zet je project in een GitHub repository.</li>
+        <li>Publiceer via Azure Static Web Apps.</li>
+        <li>Lever je GitHub-link en live Azure-link in.</li>
+      </ul>
+    </section>
+
+    <section id="deploy" class="section-block deploy-section">
+      <div class="section-heading">
+        <p class="tag">Deploy cheatsheet</p>
+        <h2>Van repository naar live website in vijf acties.</h2>
+      </div>
+      <div class="steps-grid">
+        <div>Maak een nieuwe GitHub repository.</div>
+        <div>Upload <code>index.html</code> en <code>styles.css</code>.</div>
+        <div>Open Azure Portal en kies Static Web App.</div>
+        <div>Koppel je GitHub account en repository.</div>
+        <div>Wacht op de build en open je live URL.</div>
+      </div>
+      <a class="button primary final-button" href="#top">Terug naar boven</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Cloud Computing • MBO • Static Web Apps • Powered by GitHub & Microsoft Azure</p>
+  </footer>
+</body>
+</html>
